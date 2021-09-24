@@ -1,0 +1,3 @@
+@startuml database
+participant "Client" as Client
+@enduml
