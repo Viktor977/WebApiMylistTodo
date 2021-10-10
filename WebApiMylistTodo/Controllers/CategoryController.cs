@@ -55,6 +55,7 @@ namespace WebApiMylistTodo.Controllers
             _db.SaveChanges();
             return Ok("Saved");
         }
+
         [HttpPost]
         [Route("deleteByIdCategory")]
         public IActionResult DelById(int Id)
@@ -64,9 +65,7 @@ namespace WebApiMylistTodo.Controllers
             _db.MyCategories.Remove(cotegoria);
             _db.SaveChanges();
             return Ok("Saved");
-                
 
         }
-
     }
 }

@@ -28,6 +28,7 @@ namespace WebApiMylistTodo.Controllers
             var allList = _db.MyList.OrderBy(t => t.Id);
             return new JsonResult(allList);
         }
+
         [HttpGet]
         [Route("getById")]
         public IActionResult GetListToDoById(int ID)
@@ -36,7 +37,6 @@ namespace WebApiMylistTodo.Controllers
             if (newlist is null) return BadRequest(new { errorText = "Invalid list todo" });
             return new JsonResult(newlist);
         }
-
 
         [HttpPost]
         [Route("create")]
@@ -66,8 +66,5 @@ namespace WebApiMylistTodo.Controllers
             _db.SaveChanges();
             return Ok("Saved");
         }
-
-       
-        
     }
 }
