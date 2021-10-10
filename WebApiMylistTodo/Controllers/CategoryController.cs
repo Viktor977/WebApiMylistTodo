@@ -10,12 +10,19 @@ using WebApiMylistTodo.Models;
 
 namespace WebApiMylistTodo.Controllers
 {
+    /// <summary>
+    /// This controller changes data
+    /// </summary>
     [ApiController]
     [Route("api[controller]")]
     public class CategoryController:ControllerBase
     {
        
         private readonly DataBase _db;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="db">DataBase "MyListToDo" in this progect</param>
         public CategoryController( DataBase db)
         {
             _db = db;         
