@@ -27,7 +27,10 @@ namespace WebApiMylistTodo.Controllers
         {
             _db = db;         
         }
-
+        /// <summary>
+        /// method Get
+        /// </summary>
+        /// <returns>returns all list categories</returns>
         [HttpGet]
         [Route("getAllCategories")]
         public IActionResult GetAllCategories()

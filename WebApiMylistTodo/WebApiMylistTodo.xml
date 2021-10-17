@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiMylistTodo</name>
+    </assembly>
+    <members>
+        <member name="T:WebApiMylistTodo.Controllers.CategoryController">
+            <summary>
+            This controller changes data
+            </summary>
+        </member>
+        <member name="M:WebApiMylistTodo.Controllers.CategoryController.#ctor(WebApiMylistTodo.Modelels.Entities.DataBase)">
+            <summary>
+            
+            </summary>
+            <param name="db">DataBase "MyListToDo" in this progect</param>
+        </member>
+        <member name="M:WebApiMylistTodo.Controllers.CategoryController.GetAllCategories">
+            <summary>
+            method Get
+            </summary>
+            <returns>returns all list categories</returns>
+        </member>
+    </members>
+</doc>
